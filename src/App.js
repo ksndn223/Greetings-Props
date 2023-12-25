@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Greetings from './components/Greetings';
+import GreetingsClassComp from './components/GreetingsClassComp';
+import MyCard from './components/MyCard';
+import InNav from './components/InNav';
+import MyFooter from './components/Myfooter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InNav/>
+    <h3 class ="" align="justified"> Welcome to My Greetings Project!</h3>
+      <Greetings name ="Jane!"/>
+      <GreetingsClassComp/>
+      <MyCard/>
+     
+      <MyFooter/>
     </div>
   );
 }
